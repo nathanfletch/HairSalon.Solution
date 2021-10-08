@@ -5,7 +5,7 @@
 
 #### _By Nathan Fletcher_
 
-* This app uses a one-to-many database to track stylists and associate them with clients. Full create, read, update, and delete functionality is supported.
+* This app uses a one-to-many database to add stylists, view all stylists, and add clients connected to a specific stylist.
 
 ## Technologies Used
 
@@ -67,10 +67,7 @@
 * Please contact me if you find any bugs or have suggestions. 
 
 ## Future Plans
-* Improve styling
-
-## How This Project Was Made
-
+* Add Search functionality.
 
 ## License
 

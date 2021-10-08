@@ -11,8 +11,8 @@
   <input hidden value="@ViewBag.StylistId" name="StylistId" id="StylistId">
 
   @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name, null, new {@class="form-control"})
 
-  <input type="submit" value="Add client" class="btn btn-primary" />
+  <input type="submit" value="Add client" class="mt-3 btn btn-primary" />
 }
-<p>@Html.ActionLink("Back to stylist page", "Details", "Stylists", new { id = @ViewBag.StylistId } )</p>
+<p>@Html.ActionLink("Back to stylist page", "Details", "Stylists", new { id = @ViewBag.StylistId }, new {@class="mt-3 btn btn-warning"} )</p>

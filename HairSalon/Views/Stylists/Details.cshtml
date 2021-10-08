@@ -10,15 +10,20 @@
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
 <h3>@Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty)<h3>
 
-@if(@ViewBag.ClientsList.Count != 0)
+@if(@ViewBag.ClientsList.Count == 0)
 {
-  <ul>
+  <p>There are no clients for this stylist yet.</p>
+}
+else
+{
+  <h3>Clients: </h3>
+  <ul class="list-group">
     @foreach(Client client in @ViewBag.ClientsList)
     {
-      <li><p>@client.Name</p></li>
+      <li class="list-group-item text-sm">@client.Name</li>
     }
   </ul>
 }
 
-<p>@Html.ActionLink("Add a new client", "Create", "Clients", new { id = @Model.StylistId})</p>
-<p>@Html.ActionLink("View all stylists", "Index")</p>
+<p>@Html.ActionLink("Add a new client", "Create", "Clients", new { id = @Model.StylistId}, new {@class="mt-3 btn btn-primary"})</p>
+<p>@Html.ActionLink("View all stylists", "Index", null, null, new {@class="btn btn-warning"})</p>

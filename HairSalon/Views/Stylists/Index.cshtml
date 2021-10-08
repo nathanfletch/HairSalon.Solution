@@ -11,12 +11,12 @@
   <h3>There are no stylists</h3>
 }
 
-<ul>
+<ul class="list-group">
   @foreach (Stylist stylist in Model)
   {
-    <li>@Html.ActionLink($"{@stylist.Name}", "Details", new { id = stylist.StylistId }) </li>
+    <li class="list-group-item">@Html.ActionLink($"{@stylist.Name}", "Details", new { id = stylist.StylistId }) </li>
   }
 </ul>
 
-<p>@Html.ActionLink("Add a stylist", "Create")</p>
-<p>@Html.ActionLink("Go home", "Index", "Home")</p>
+<p>@Html.ActionLink("Add a stylist", "Create", null, null, new {@class="mt-3 btn btn-primary"})</p>
+<p>@Html.ActionLink("Go home", "Index", "Home", null, new {@class="btn btn-warning"})</p>
