@@ -4,8 +4,8 @@ namespace Salon.Models
 {
   public class SalonContext : DbContext
   {
-    public DbSet<>  { get; set; } //update this
-    public DbSet<>  { get; set; } //update this
+    public DbSet<Stylist> Stylists { get; set; } //update this
+    public DbSet<Client> Clients { get; set; } //update this
 
     public SalonContext(DbContextOptions options) : base(options) { }
 
