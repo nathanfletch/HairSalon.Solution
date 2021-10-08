@@ -37,6 +37,7 @@ namespace HairSalon.Controllers
     public ActionResult Details(int id)
     {
       Stylist selectedStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      // List<Clie
       return View(selectedStylist);
     }
   }
