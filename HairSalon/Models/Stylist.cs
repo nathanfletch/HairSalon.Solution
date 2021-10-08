@@ -16,16 +16,3 @@ namespace HairSalon.Models
     public virtual ICollection<Client> Clients { get; set; }
   }
 }
-
-/*
-todos:
-Create/View
-Create 
-Styling
-
-done: 
-files/folders setup
-readme
-models
-database
-*/
