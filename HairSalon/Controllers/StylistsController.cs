@@ -34,12 +34,10 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
 
-    // public ActionResult Details(int id)
-    // {
-    //   Stylist thisCategory = _db.Stylists.FirstOrDefault(stylist => stylist.CategoryId == id);
-    //   return View(thisCategory);
-    //}
-    
-    
+    public ActionResult Details(int id)
+    {
+      Stylist selectedStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      return View(selectedStylist);
+    }
   }
 }
