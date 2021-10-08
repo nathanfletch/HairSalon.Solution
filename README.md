@@ -1,7 +1,7 @@
-# Vendor Tracker
+# Hair Salon
 
 
-#### Salon website to track stylists and their clients.
+#### Salon management app to track stylists and their clients.
 
 #### _By Nathan Fletcher_
 
