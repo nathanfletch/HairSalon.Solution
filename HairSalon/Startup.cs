@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Salon
+namespace HairSalon
 {
   public class Startup
   {
