@@ -38,7 +38,8 @@ namespace HairSalon.Controllers
     // {
     //   Stylist thisCategory = _db.Stylists.FirstOrDefault(stylist => stylist.CategoryId == id);
     //   return View(thisCategory);
-    }
+    //}
+    
     
   }
 }

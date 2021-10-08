@@ -28,11 +28,8 @@
 
 #### Setup
 * Clone this repository to your local machine
-* Navigate to the HairSalon.Solution folder in your terminal and run the following commands:
-* `dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0`
-* `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2`
-* `dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0`
-* Create a file named "appsettings.json" in the same folder and add the following code to the file:
+* Navigate to the HairSalon.Solution create a file named "appsettings.json" 
+* Add the following code to the file:
   ```
   {
     "ConnectionStrings": {
@@ -40,6 +37,10 @@
     }
   }
   ```
+* Navigate to the HairSalon folder and run the following commands:
+* `dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0`
+* `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2`
+* `dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0`
 
 #### Import the database
 * Run the command "$ mySql -uroot -p[YOUR-PASSWORD-HERE]", replacing [YOUR-PASSWORD-HERE] with your own MySql password
@@ -54,7 +55,7 @@
 * Reopen the "Navigator>Schemas" tab, Right click and select "refresh all" to see the imported database
 
 #### Start
-* Navigate to the HairSalon folder and run the following commands
+* From the terminal in the HairSalon folder, run the following commands:
 * `dotnet restore`
 * `dotnet build` to compile the project.
 * `dotnet run` to start the server.
